@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Agro Forte no Mundo - Uso Consciente de Agrotóxicos</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Botão de acessibilidade fixo -->
+    <div id="botaoAcessibilidade" class="acessibilidade-btn">
+        <button id="btnAcessibilidade" aria-label="Menu de acessibilidade">♿ Acessibilidade</button>
+        <div id="menuAcessibilidade" class="menu-acessibilidade escondido">
+            <button id="aumentarFonte">A+ Aumentar Fonte</button>
+            <button id="diminuirFonte">A- Diminuir Fonte</button>
+            <button id="altoContraste">🌓 Alto Contraste</button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🌾 AGRO FORTE NO MUNDO</h1>
+        <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#calculadora">Calculadora</a></li>
+            <li><a href="#conclusao">Conclusão</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção Início -->
+        <section id="inicio">
+            <h2>🌱 Bem-vindo ao futuro da agricultura sustentável</h2>
+            <article>
+                <p>O agronegócio brasileiro é <strong>forte mundialmente</strong>, mas precisa crescer de forma equilibrada com o meio ambiente. Este site foi criado para conscientizar sobre o <strong>uso excessivo de agrotóxicos</strong> e apresentar tecnologias que podem reduzir esse impacto.</p>
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop" alt="Plantação sustentável com tecnologia" class="imagem-destaque">
+                <p><em>Imagem ilustrativa: agricultura moderna e sustentável.</em></p>
+            </article>
+        </section>
+
+        <!-- Seção Problema -->
+        <section id="problema">
+            <h2>⚠️ O problema: uso excessivo de agrotóxicos</h2>
+            <article>
+                <p>O uso descontrolado de agrotóxicos contamina o solo, a água e os alimentos, além de prejudicar a saúde humana e a biodiversidade. A sociedade precisa de alternativas para produzir mais com menos veneno.</p>
+                <ul>
+                    <li>🌍 Contaminação de rios e nascentes</li>
+                    <li>🐝 Morte de polinizadores como abelhas</li>
+                    <li>🧑‍🌾 Riscos à saúde dos agricultores</li>
+                    <li>🍎 Alimentos com resíduos tóxicos</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Seção Soluções Sustentáveis -->
+        <section id="solucoes">
+            <h2>💡 Soluções sustentáveis - tecnologias que ajudam</h2>
+            <article>
+                <p>Existem várias tecnologias que permitem reduzir o uso de agrotóxicos sem perder produtividade:</p>
+                
+                <!-- Tabela de tecnologias -->
+                <table class="tabela-solucoes">
+                    <thead>
+                        <tr>
+                            <th>Tecnologia</th>
+                            <th>Como ajuda</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>🧬 Controle biológico</td><td>Uso de predadores naturais contra pragas</td></tr>
+                        <tr><td>🚁 Drones de pulverização</td><td>Aplicação localizada e precisa</td></tr>
+                        <tr><td>🌱 Plantio direto</td><td>Menos erosão e necessidade de químicos</td></tr>
+                        <tr><td>📱 Sensores e IA</td><td>Monitoramento em tempo real da saúde da planta</td></tr>
+                    </tbody>
+                </table>
+                
+                <p>Essas soluções mostram que é possível ter um <strong>agro forte e sustentável</strong>!</p>
+            </article>
+        </section>
+
+        <!-- Seção Calculadora Interativa (JavaScript) -->
+        <section id="calculadora">
+            <h2>🧪 Calculadora de Consumo de Agrotóxicos</h2>
+            <article>
+                <p>Descubra se o uso de agrotóxicos na sua propriedade (ou na sua região) é <strong>pouco, médio ou excessivo</strong>.</p>
+                
+                <div class="calculadora-container">
+                    <label for="hectares">Área plantada (hectares):</label>
+                    <input type="number" id="hectares" placeholder="Ex: 10" min="0.1" step="0.1">
+                    
+                    <label for="litrosAgro">Litros de agrotóxico usados por mês:</label>
+                    <input type="number" id="litrosAgro" placeholder="Ex: 50" min="0" step="1">
+                    
+                    <button id="calcularBtn">📊 Calcular Consumo</button>
+                    
+                    <div id="resultadoCalculadora" class="resultado">
+                        <!-- Resultado será exibido aqui -->
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Seção Conclusão -->
+        <section id="conclusao">
+            <h2>🌿 Conclusão: Agro forte e futuro sustentável</h2>
+            <article>
+                <p>O agronegócio brasileiro não precisa escolher entre produzir e preservar. Com <strong>tecnologia, conscientização e equilíbrio</strong>, podemos ter um agro forte mundialmente e um futuro sustentável para todos.</p>
+                <p><strong>Lembre-se:</strong> O uso inteligente de agrotóxicos, ou sua substituição por métodos sustentáveis, é o caminho para o futuro.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026 | Tema: Agro forte, futuro sustentável</p>
+        <p>BRAYAN BERTHOLDO VASCONCELOS | Turma: [Sua turma]</p>
+        <p>Imagens ilustrativas: Fonte Unsplash - Uso educacional</p>
+    </footer>
+
+    <!-- JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
